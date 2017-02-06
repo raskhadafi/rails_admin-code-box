@@ -1,3 +1,4 @@
+require "rails_admin"
 require "rails_admin/code/box/version"
 
 module RailsAdmin

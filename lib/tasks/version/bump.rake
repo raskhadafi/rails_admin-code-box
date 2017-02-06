@@ -13,5 +13,5 @@ rule(/^version:bump:.*/) do |t|
 
   sh "git status | grep 'nothing to commit'" # ensure we are not dirty
   File.open(file,'w') { |f| f.write(version_file.sub(old_version, new_version)) }
-  sh "rake install && bundle && git add #{file} && NO_SYNTAX_CHECK=true git commit -m '#{bump_version_text} #{new_version}' && git tag version-#{new_version} && git push && git push --tags"
+  sh "rake install && bundle && git add #{file} && NO_SYNTAX_CHECK=true git commit -m '#{bump_version_text} #{new_version}' && rake release"
 end

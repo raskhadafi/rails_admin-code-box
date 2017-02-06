@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Roman Simecek"]
   spec.email         = ["roman@good2go.ch"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Add code-box support to rails_admin.}
+  spec.description   = %q{Extend rails_admin so that code-box attribute can be administrated.}
+  spec.homepage      = "https://github.com/raskhadafi"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
